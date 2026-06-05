@@ -17,8 +17,16 @@ HTML - A criação das tags foram voltadas pra inserir os botões e criar as cla
 JS - Com o Javascript foram adicionadas as constantes display e historico, o document.GetElementById vai até o HTML e seleciona o visor principal e a linha do histórico. let expressao = "" tem a grande responsabilidade de guardar os cálculos. Na Inserir(Valor), ela é sempre atendida quando você clica em algum botão númerico ou nos operadores. Quando utilizamos o += ele junta e acumula valores. Ex : se clicamos no "1" e depois no "5", ele estára juntando os 2 valores (como se fosse uma concatenção). 
 Para que a calculadora não "trave", utilizamos (try) e (catch) ela estára lendo algum cálculo fora do padrão como : 80++-7, assim ela estará vendo uma inconsistência e não irá proseguir com a operação, exibindo a mensagem de (Erro). a funcionalidade que a eval() tem é muito importante, ela pega um texto comum, como este "7+30*8" vai entender que é um cálculo e exibirá o resultado final (247 o resultado da operação). A função expressao = resultado.tostring() vai pegar o resultado transformar ele em texto e ele vai ficar armazenado, ao clicar em +19 ele adiciona o resultado a partir do antigo resultado. A função final Limpar() esvazia o histórico dos cálculos, volta para o ponto inicial que é o valor 0 e apaga qualquer resultado que estava no topo do display.
 
-CSS - 
+CSS - A "parte final" entra com a personalização da calculadora e da página em si, como margem, altura, largura, posição dos elementos e tamanho deles. o (*) diferente do Javascript que funciona como um operador de multiplicação, aqui ele zera as margens e espaçamentos que é padrão de qualquer navegador, o box-sizing: border-box são propriedades que garantem que nenhum botão quebre ao adicionar bordas em nosso visual, a classe (body) da própria página transforma toda a tela em um bloco flexível que trata-se de uma aplicação que vai se adaptar aos espaços que tem disponíveis dentro da sua página de projeto, align-items deixa a calculadora no centro da página, contra um fundo azul-escuro que é um pouco acinzentado, seu código exato de tonalidade é (#273746). O visor digital tem uma simulação de uma calculadora digital semelhante a de PCs, celulares e smartwatches, ela usa essa linha de código: (#1f1f1f). O flex-direction: column deixa o histórico com uma cor cinza um pouco mais clara e letro menor, em cima do display principal (com números grandes brancos de 2.2rem). O grid-templete-columns: repeat(4, 1fr) vai dividir o espaço de cada botão em 4 colunas. Gap: 10px: Crirá uma distância de 10 pixels entre cada botão para que nenhum fique muito colado no outro.  
 
+Cores Temáticas:
+
+□ Operadores (÷, x, -, +): Ganham a cor amarela/laranja.
+
+□ Limpar (C): Ganha a cor vermelha (limpeza dos cálculos).
+
+□ Igual (=): Ganha a cor verde (conclusão da conta).
+ 
 # 🚀 Funcionalidades
 - Operações matemáticas básicas (Soma, Subtração, Multiplicação e Divisão).
 - Suporte a números decimais utilizando a vírgula `,`.
