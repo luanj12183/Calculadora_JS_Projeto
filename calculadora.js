@@ -1,19 +1,24 @@
 const display = document.getElementById('display');
+let expressao = "";
 
-function AdicionaraoDisplay(valor) {
-    display.value += valor;
+function Inserir(valor) {
+    expressao += valor;
+    let textovisor = expressao.replaceAll('.', ',');
+    display.value = textovisor;
 }
 
-function LimparDisplay() {
-    display.value = '';
+function calcular() {
+    try {
+        let resultado = eval(expressao);
+        display.value = resultado.toString().replace('.', ',');
+        expressao = resultado.toString();
+    } catch (erro) {
+        display.value = "Erro";
+        expressao = "";
+    }
 }
 
-function calcular() {      
-    try {                  
-        if (display.value !== '') { 
-            display.value = eval(display.value);
-        }                   
-    } catch (error) {      
-        display.value = 'Erro';
-    }                      
+function limparDisplay() {
+    expressao = "";
+    display.value = "";
 }
