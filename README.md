@@ -4,6 +4,8 @@ Projeto de uma calculadora web desenvolvida com HTML, CSS e Javascript.
 
 # 📱 Demonstração de suas funcionalidades:
 
+<div align="center">
+
 
 
 # Explicação da Implemntação de funções  
