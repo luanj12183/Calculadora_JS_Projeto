@@ -3,12 +3,12 @@ const historico = document.getElementById('historico');
 let expressao = "";
 
 function Inserir(valor) {
+    console.log("Botão clicado: " + valor); 
     expressao += valor;
     
     historico.innerText = expressao.replaceAll('.', ',').replaceAll('*', 'x').replaceAll('/', '÷');
     
-    let textovisor = expressao.replaceAll('.', ',');
-    display.value = textovisor;
+    display.value = expressao.replaceAll('.', ',');
 }
 
 function calcular() {
