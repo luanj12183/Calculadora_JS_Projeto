@@ -9,10 +9,14 @@
 <body>
 
     <main class="calculadora">
-        <input type="text" id="display" readonly>
+
+    <div class="visor-container">
+    <div id="historico"></div>
+    <input type="text" id="display" readonly value="0">
+</div>
 
         <section class="botoes">
-            <button onclick="LimparDisplay()" class="btn-limpar">C</button>
+            <button onclick="Limpar()" class="btn-limpar">C</button>
             <button onclick="Inserir('/')" class="btn-operador">÷</button>
             <button onclick="Inserir('*')" class="btn-operador">x</button>
             <button onclick="Inserir('-')" class="btn-operador">-</button> 

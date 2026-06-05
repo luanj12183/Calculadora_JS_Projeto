@@ -8,7 +8,11 @@ Projeto de uma calculadora web desenvolvida com HTML, CSS e Javascript.
 
 # Explicação da Implemntação de funções  
 
+HTML - A criação das tags foram voltadas pra inserir os botões e criar as classes para os operadores, junto ao botão de calcular 
 
+JS - 
+
+CSS - 
 
 # 🚀 Funcionalidades
 - Operações matemáticas básicas (Soma, Subtração, Multiplicação e Divisão).
