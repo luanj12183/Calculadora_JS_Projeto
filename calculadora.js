@@ -2,7 +2,7 @@ const display = document.getElementById('display');
 const historico = document.getElementById('historico'); 
 let expressao = "";
 
-function inserir(valor) {
+function Inserir(valor) {
     expressao += valor;
     
     historico.innerText = expressao.replaceAll('.', ',').replaceAll('*', 'x').replaceAll('/', '÷');
