@@ -18,7 +18,7 @@ function calcular() {
     }
 }
 
-function limparDisplay() {
+function LimparDisplay() {
     expressao = "";
     display.value = "";
 }
